@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <bean id="customerBean" class="com.Spring.SpringSetterInjection.Customer">
+        <property name="name" value="Shobhit"/><!-- Set name for Customer -->
+    </bean>
+ 
+    <bean id="orderBean" class="com.Spring.SpringSetterInjection.Order">
+        <property name="customer" ref="customerBean"/> <!-- Inject customerBean into Order -->
+    </bean>
+ 
+</beans>
