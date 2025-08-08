@@ -16,7 +16,7 @@ import com.wipro.shobhit.spring.quizapp.monorepo.enums.Category;
 public interface QuestionRepository extends JpaRepository<Question, Long> {
   
   
-	@Query(value = "SELECT * FROM question_db q " +
+	@Query(value = "SELECT * FROM question q " +
             "WHERE q.category = :category " +
             "AND q.difficulty_level = :level " +
             "ORDER BY RANDOM() LIMIT 5", 
@@ -25,4 +25,5 @@ public interface QuestionRepository extends JpaRepository<Question, Long> {
 	List<Question> findByCategory(Category category);
 	
 }
+
 
