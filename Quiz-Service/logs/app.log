@@ -1,0 +1,106 @@
+2025-08-08T17:22:19.604+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] c.w.s.m.q.QuizServiceApplication         : Starting QuizServiceApplication using Java 17.0.2 with PID 7212 (E:\Wipro\Microservices\Quiz-Service\target\classes started by Shobhit PC in E:\Wipro\Microservices\Quiz-Service)
+2025-08-08T17:22:19.606+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] c.w.s.m.q.QuizServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-08T17:22:19.650+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-08T17:22:19.650+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-08T17:22:20.891+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-08T17:22:21.045+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 1 JPA repository interface.
+2025-08-08T17:22:21.246+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a3d7d9d-a904-388c-a5c1-e2db0500e869
+2025-08-08T17:22:21.886+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-08T17:22:21.901+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-08T17:22:21.901+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-08T17:22:21.968+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-08T17:22:21.968+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2317 ms
+2025-08-08T17:22:22.332+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-08T17:22:22.405+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-08T17:22:22.446+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-08T17:22:22.738+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-08T17:22:22.779+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-08T17:22:22.948+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1556dca1
+2025-08-08T17:22:22.949+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-08T17:22:22.996+05:30  WARN 7212 --- [Quiz-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-08T17:22:23.013+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-08T17:22:23.942+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-08T17:22:24.088+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-08T17:22:24.236+05:30  WARN 7212 --- [Quiz-Service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController' defined in file [E:\Wipro\Microservices\Quiz-Service\target\classes\com\wipro\shobhit\microservices\quizservices\controllers\QuizController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'quizServiceImpl' defined in file [E:\Wipro\Microservices\Quiz-Service\target\classes\com\wipro\shobhit\microservices\quizservices\services\QuizServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.wipro.shobhit.microservices.quizservices.feign.QuizInterface' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-08-08T17:22:24.236+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-08T17:22:24.240+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-08T17:22:24.243+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-08T17:22:24.248+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-08T17:22:24.273+05:30  INFO 7212 --- [Quiz-Service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-08T17:22:24.294+05:30 ERROR 7212 --- [Quiz-Service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.wipro.shobhit.microservices.quizservices.services.QuizServiceImpl required a bean of type 'com.wipro.shobhit.microservices.quizservices.feign.QuizInterface' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wipro.shobhit.microservices.quizservices.feign.QuizInterface' in your configuration.
+
+2025-08-08T17:23:28.318+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] c.w.s.m.q.QuizServiceApplication         : Starting QuizServiceApplication using Java 17.0.2 with PID 16172 (E:\Wipro\Microservices\Quiz-Service\target\classes started by Shobhit PC in E:\Wipro\Microservices\Quiz-Service)
+2025-08-08T17:23:28.406+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] c.w.s.m.q.QuizServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-08T17:23:28.442+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-08T17:23:28.442+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-08T17:23:29.368+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-08T17:23:29.485+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
+2025-08-08T17:23:29.647+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a3d7d9d-a904-388c-a5c1-e2db0500e869
+2025-08-08T17:23:30.043+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-08T17:23:30.053+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-08T17:23:30.053+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-08T17:23:30.107+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-08T17:23:30.108+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1666 ms
+2025-08-08T17:23:30.465+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-08T17:23:30.539+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-08T17:23:30.579+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-08T17:23:30.838+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-08T17:23:30.877+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-08T17:23:31.135+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1df91199
+2025-08-08T17:23:31.137+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-08T17:23:31.176+05:30  WARN 16172 --- [Quiz-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-08T17:23:31.195+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-08T17:23:32.414+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-08T17:23:32.557+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-08T17:23:32.684+05:30  WARN 16172 --- [Quiz-Service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController' defined in file [E:\Wipro\Microservices\Quiz-Service\target\classes\com\wipro\shobhit\microservices\quizservices\controllers\QuizController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'quizServiceImpl' defined in file [E:\Wipro\Microservices\Quiz-Service\target\classes\com\wipro\shobhit\microservices\quizservices\services\QuizServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.wipro.shobhit.microservices.quizservices.feign.QuizInterface' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-08-08T17:23:32.685+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-08T17:23:32.689+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-08T17:23:32.691+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-08T17:23:32.696+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-08T17:23:32.717+05:30  INFO 16172 --- [Quiz-Service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-08T17:23:32.738+05:30 ERROR 16172 --- [Quiz-Service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.wipro.shobhit.microservices.quizservices.services.QuizServiceImpl required a bean of type 'com.wipro.shobhit.microservices.quizservices.feign.QuizInterface' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wipro.shobhit.microservices.quizservices.feign.QuizInterface' in your configuration.
+
