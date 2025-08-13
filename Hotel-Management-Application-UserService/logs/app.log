@@ -1,0 +1,496 @@
+2025-08-13T21:30:30.381+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagementApplication     : Starting HotelManagementApplication using Java 17.0.2 with PID 12468 (E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService\target\classes started by Shobhit PC in E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService)
+2025-08-13T21:30:30.387+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-13T21:30:30.422+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-13T21:30:30.424+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=HOTEL-MANAGEMENT-APPLICATION-USERSERVICE, profiles=[default], label=null, version=67dbd04e6efed51f737a4b0f2094eae5b4d304e5, state=
+2025-08-13T21:30:30.426+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13T21:30:30.426+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13T21:30:31.446+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13T21:30:31.566+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+2025-08-13T21:30:31.819+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ef6d7ac-6d2a-336d-8b6c-b76e88bd60ac
+2025-08-13T21:30:32.504+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-13T21:30:32.514+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-13T21:30:32.515+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-13T21:30:32.570+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-13T21:30:32.570+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2143 ms
+2025-08-13T21:30:33.046+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13T21:30:33.112+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-13T21:30:33.148+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-13T21:30:33.416+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13T21:30:33.446+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T21:30:33.605+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28b155c8
+2025-08-13T21:30:33.607+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-13T21:30:33.644+05:30  WARN 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.27 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-08-13T21:30:33.648+05:30  WARN 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13T21:30:33.664+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-13T21:30:34.396+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13T21:30:34.450+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:30:34.775+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13T21:30:35.312+05:30  WARN 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13T21:30:37.051+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-13T21:30:37.218+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-13T21:30:37.308+05:30  WARN 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-13T21:30:37.357+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-13T21:30:37.457+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-13T21:30:37.478+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-13T21:30:37.481+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-13T21:30:37.488+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-13T21:30:37.488+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-13T21:30:37.488+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-13T21:30:37.488+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-13T21:30:37.489+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-13T21:30:37.489+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-13T21:30:37.489+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-13T21:30:37.760+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-13T21:30:37.762+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-13T21:30:37.763+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-13T21:30:37.764+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755100837764 with initial instances count: 1
+2025-08-13T21:30:37.775+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status UP
+2025-08-13T21:30:37.776+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755100837776, current=UP, previous=STARTING]
+2025-08-13T21:30:37.777+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:30:37.784+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status DOWN
+2025-08-13T21:30:37.785+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755100837785, current=DOWN, previous=UP]
+2025-08-13T21:30:37.785+05:30  WARN 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-13T21:30:37.791+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:30:37.795+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-13T21:30:37.800+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-13T21:30:37.802+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-13T21:30:37.809+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:30:37.810+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:30:37.814+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:30:37.814+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-13T21:30:37.820+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - deregister  status: 200
+2025-08-13T21:30:37.821+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-13T21:30:37.847+05:30  INFO 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-13T21:30:37.865+05:30 ERROR 12468 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+2025-08-13T21:30:59.752+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagementApplication     : Starting HotelManagementApplication using Java 17.0.2 with PID 13976 (E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService\target\classes started by Shobhit PC in E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService)
+2025-08-13T21:30:59.754+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-13T21:30:59.790+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-13T21:30:59.791+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=HOTEL-MANAGEMENT-APPLICATION-USERSERVICE, profiles=[default], label=null, version=67dbd04e6efed51f737a4b0f2094eae5b4d304e5, state=
+2025-08-13T21:30:59.792+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13T21:30:59.792+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13T21:31:00.845+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13T21:31:00.959+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2025-08-13T21:31:01.205+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ef6d7ac-6d2a-336d-8b6c-b76e88bd60ac
+2025-08-13T21:31:02.000+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-13T21:31:02.011+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-13T21:31:02.011+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-13T21:31:02.068+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-13T21:31:02.068+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2275 ms
+2025-08-13T21:31:02.472+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13T21:31:02.543+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-13T21:31:02.579+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-13T21:31:02.812+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13T21:31:02.843+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T21:31:02.975+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1824f858
+2025-08-13T21:31:02.976+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-13T21:31:03.014+05:30  WARN 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.27 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-08-13T21:31:03.022+05:30  WARN 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13T21:31:03.039+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-13T21:31:04.027+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13T21:31:04.070+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:31:04.455+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13T21:31:04.888+05:30  WARN 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13T21:31:06.491+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-13T21:31:06.668+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-13T21:31:06.750+05:30  WARN 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-13T21:31:06.800+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-13T21:31:06.892+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-13T21:31:06.914+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-13T21:31:06.917+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-13T21:31:06.925+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-13T21:31:06.925+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-13T21:31:06.925+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-13T21:31:06.925+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-13T21:31:06.925+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-13T21:31:06.925+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-13T21:31:06.925+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-13T21:31:07.195+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-13T21:31:07.197+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-13T21:31:07.198+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-13T21:31:07.199+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755100867199 with initial instances count: 1
+2025-08-13T21:31:07.211+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status UP
+2025-08-13T21:31:07.211+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755100867211, current=UP, previous=STARTING]
+2025-08-13T21:31:07.212+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:31:07.219+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status DOWN
+2025-08-13T21:31:07.220+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755100867220, current=DOWN, previous=UP]
+2025-08-13T21:31:07.220+05:30  WARN 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-13T21:31:07.226+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:31:07.229+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-13T21:31:07.234+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-13T21:31:07.236+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-13T21:31:07.244+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:31:07.244+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:31:07.248+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:31:07.248+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-13T21:31:07.253+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - deregister  status: 200
+2025-08-13T21:31:07.253+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-13T21:31:07.276+05:30  INFO 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-13T21:31:07.293+05:30 ERROR 13976 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+2025-08-13T21:31:21.079+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagementApplication     : Starting HotelManagementApplication using Java 17.0.2 with PID 22632 (E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService\target\classes started by Shobhit PC in E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService)
+2025-08-13T21:31:21.080+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-13T21:31:21.113+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-13T21:31:21.113+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=HOTEL-MANAGEMENT-APPLICATION-USERSERVICE, profiles=[default], label=null, version=67dbd04e6efed51f737a4b0f2094eae5b4d304e5, state=
+2025-08-13T21:31:21.115+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13T21:31:21.115+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13T21:31:22.115+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13T21:31:22.226+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2025-08-13T21:31:22.459+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ef6d7ac-6d2a-336d-8b6c-b76e88bd60ac
+2025-08-13T21:31:23.129+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-13T21:31:23.139+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-13T21:31:23.139+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-13T21:31:23.257+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-13T21:31:23.257+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2142 ms
+2025-08-13T21:31:23.739+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13T21:31:23.800+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-13T21:31:23.837+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-13T21:31:24.061+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13T21:31:24.092+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T21:31:24.216+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ccdd7c6
+2025-08-13T21:31:24.217+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-13T21:31:24.249+05:30  WARN 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.27 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-08-13T21:31:24.253+05:30  WARN 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13T21:31:24.268+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-13T21:31:24.915+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13T21:31:25.025+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:31:25.263+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13T21:31:25.744+05:30  WARN 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13T21:31:27.150+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-13T21:31:27.305+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-13T21:31:27.386+05:30  WARN 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-13T21:31:27.430+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-13T21:31:27.522+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-13T21:31:27.544+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-13T21:31:27.548+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-13T21:31:27.555+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-13T21:31:27.555+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-13T21:31:27.555+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-13T21:31:27.555+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-13T21:31:27.555+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-13T21:31:27.556+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-13T21:31:27.556+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-13T21:31:27.788+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-13T21:31:27.790+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-13T21:31:27.792+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-13T21:31:27.793+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755100887793 with initial instances count: 1
+2025-08-13T21:31:27.804+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status UP
+2025-08-13T21:31:27.805+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755100887805, current=UP, previous=STARTING]
+2025-08-13T21:31:27.806+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:31:27.811+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status DOWN
+2025-08-13T21:31:27.811+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755100887811, current=DOWN, previous=UP]
+2025-08-13T21:31:27.811+05:30  WARN 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-13T21:31:27.817+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:31:27.820+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-13T21:31:27.824+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-13T21:31:27.825+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-13T21:31:27.836+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:31:27.837+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:31:27.841+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:31:27.841+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-13T21:31:27.845+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - deregister  status: 200
+2025-08-13T21:31:27.845+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-13T21:31:27.866+05:30  INFO 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-13T21:31:27.883+05:30 ERROR 22632 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+2025-08-13T21:32:05.760+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagementApplication     : Starting HotelManagementApplication using Java 17.0.2 with PID 2556 (E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService\target\classes started by Shobhit PC in E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService)
+2025-08-13T21:32:05.762+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-13T21:32:05.794+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-13T21:32:05.794+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=HOTEL-MANAGEMENT-APPLICATION-USERSERVICE, profiles=[default], label=null, version=67dbd04e6efed51f737a4b0f2094eae5b4d304e5, state=
+2025-08-13T21:32:05.796+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13T21:32:05.796+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13T21:32:06.648+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13T21:32:06.764+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
+2025-08-13T21:32:07.007+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ef6d7ac-6d2a-336d-8b6c-b76e88bd60ac
+2025-08-13T21:32:07.613+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-13T21:32:07.623+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-13T21:32:07.623+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-13T21:32:07.676+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-13T21:32:07.677+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1881 ms
+2025-08-13T21:32:08.053+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13T21:32:08.092+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-13T21:32:08.122+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-13T21:32:08.329+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13T21:32:08.354+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T21:32:08.477+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3111c3ab
+2025-08-13T21:32:08.478+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-13T21:32:08.510+05:30  WARN 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.27 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-08-13T21:32:08.513+05:30  WARN 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13T21:32:08.528+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-13T21:32:09.162+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13T21:32:09.275+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:32:09.517+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13T21:32:10.018+05:30  WARN 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13T21:32:11.609+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-13T21:32:11.832+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-13T21:32:11.931+05:30  WARN 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-13T21:32:11.982+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-13T21:32:12.085+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-13T21:32:12.107+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-13T21:32:12.111+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-13T21:32:12.123+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-13T21:32:12.123+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-13T21:32:12.123+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-13T21:32:12.124+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-13T21:32:12.124+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-13T21:32:12.124+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-13T21:32:12.124+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-13T21:32:12.717+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-13T21:32:12.720+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-13T21:32:12.722+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-13T21:32:12.723+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755100932723 with initial instances count: 1
+2025-08-13T21:32:12.736+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status UP
+2025-08-13T21:32:12.736+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755100932736, current=UP, previous=STARTING]
+2025-08-13T21:32:12.738+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:32:12.747+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status DOWN
+2025-08-13T21:32:12.748+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755100932748, current=DOWN, previous=UP]
+2025-08-13T21:32:12.748+05:30  WARN 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-13T21:32:12.756+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:32:12.762+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-13T21:32:12.773+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-13T21:32:12.778+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-13T21:32:12.796+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:32:12.797+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:32:12.805+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:32:12.805+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-13T21:32:12.816+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - deregister  status: 200
+2025-08-13T21:32:12.816+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-13T21:32:12.856+05:30  INFO 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-13T21:32:12.890+05:30 ERROR 2556 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+2025-08-13T21:35:29.772+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagemntApplication      : Starting HotelManagemntApplication using Java 17.0.2 with PID 22812 (E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService\target\classes started by Shobhit PC in E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService)
+2025-08-13T21:35:29.774+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagemntApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-13T21:35:29.806+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-13T21:35:29.806+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=HOTEL-MANAGEMENT-APPLICATION-USERSERVICE, profiles=[default], label=null, version=67dbd04e6efed51f737a4b0f2094eae5b4d304e5, state=
+2025-08-13T21:35:29.807+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13T21:35:29.808+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13T21:35:30.878+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13T21:35:30.990+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2025-08-13T21:35:31.233+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4b6c2856-7baf-3545-8cec-a15ac35d465c
+2025-08-13T21:35:31.836+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-13T21:35:31.845+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-13T21:35:31.845+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-13T21:35:31.895+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-13T21:35:31.896+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2088 ms
+2025-08-13T21:35:32.295+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13T21:35:32.356+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-13T21:35:32.392+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-13T21:35:32.625+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13T21:35:32.654+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T21:35:32.785+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2587aae2
+2025-08-13T21:35:32.787+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-13T21:35:32.822+05:30  WARN 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.27 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-08-13T21:35:32.826+05:30  WARN 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13T21:35:32.842+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-13T21:35:33.540+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13T21:35:33.577+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:35:33.844+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13T21:35:34.316+05:30  WARN 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13T21:35:35.850+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-13T21:35:36.006+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-13T21:35:36.087+05:30  WARN 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-13T21:35:36.129+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-13T21:35:36.217+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-13T21:35:36.238+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-13T21:35:36.242+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-13T21:35:36.249+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-13T21:35:36.249+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-13T21:35:36.249+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-13T21:35:36.249+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-13T21:35:36.249+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-13T21:35:36.249+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-13T21:35:36.249+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-13T21:35:36.509+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-13T21:35:36.511+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-13T21:35:36.513+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-13T21:35:36.514+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755101136514 with initial instances count: 1
+2025-08-13T21:35:36.525+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status UP
+2025-08-13T21:35:36.526+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755101136526, current=UP, previous=STARTING]
+2025-08-13T21:35:36.527+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:35:36.533+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status DOWN
+2025-08-13T21:35:36.534+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755101136534, current=DOWN, previous=UP]
+2025-08-13T21:35:36.534+05:30  WARN 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-13T21:35:36.539+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:35:36.542+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-13T21:35:36.546+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-13T21:35:36.548+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-13T21:35:36.557+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:35:36.558+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090: registering service...
+2025-08-13T21:35:36.562+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - registration status: 204
+2025-08-13T21:35:36.562+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-13T21:35:36.567+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9090 - deregister  status: 200
+2025-08-13T21:35:36.567+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-13T21:35:36.588+05:30  INFO 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-13T21:35:36.605+05:30 ERROR 22812 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+2025-08-13T21:36:22.115+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagemntApplication      : Starting HotelManagemntApplication using Java 17.0.2 with PID 20184 (E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService\target\classes started by Shobhit PC in E:\Wipro\Microservices\Hotel-Management-Microservice\Hotel-Management-Application-UserService)
+2025-08-13T21:36:22.116+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagemntApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-13T21:36:22.149+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-13T21:36:22.149+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=HOTEL-MANAGEMENT-APPLICATION-USERSERVICE, profiles=[default], label=null, version=67dbd04e6efed51f737a4b0f2094eae5b4d304e5, state=
+2025-08-13T21:36:22.151+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13T21:36:22.151+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13T21:36:22.982+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13T21:36:23.092+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2025-08-13T21:36:23.331+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4b6c2856-7baf-3545-8cec-a15ac35d465c
+2025-08-13T21:36:23.931+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9098 (http)
+2025-08-13T21:36:23.946+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-13T21:36:23.946+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-13T21:36:23.998+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-13T21:36:23.998+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1847 ms
+2025-08-13T21:36:24.367+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13T21:36:24.406+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-13T21:36:24.432+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-13T21:36:24.639+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13T21:36:24.663+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T21:36:24.784+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d4f197f
+2025-08-13T21:36:24.786+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-13T21:36:24.817+05:30  WARN 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.27 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-08-13T21:36:24.820+05:30  WARN 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13T21:36:24.835+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.27
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-13T21:36:25.454+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13T21:36:25.567+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T21:36:25.842+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13T21:36:26.293+05:30  WARN 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13T21:36:27.743+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-13T21:36:27.898+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-13T21:36:27.985+05:30  WARN 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-13T21:36:28.026+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-13T21:36:28.112+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-13T21:36:28.134+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-13T21:36:28.137+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-13T21:36:28.145+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-13T21:36:28.145+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-13T21:36:28.145+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-13T21:36:28.145+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-13T21:36:28.145+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-13T21:36:28.145+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-13T21:36:28.145+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-13T21:36:28.365+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-13T21:36:28.367+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-13T21:36:28.369+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-13T21:36:28.370+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755101188370 with initial instances count: 1
+2025-08-13T21:36:28.381+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTEL-MANAGEMENT-APPLICATION-USERSERVICE with eureka with status UP
+2025-08-13T21:36:28.381+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755101188381, current=UP, previous=STARTING]
+2025-08-13T21:36:28.382+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9098: registering service...
+2025-08-13T21:36:28.418+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9098 (http) with context path '/'
+2025-08-13T21:36:28.419+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9098
+2025-08-13T21:36:28.430+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-MANAGEMENT-APPLICATION-USERSERVICE/Shobhit:HOTEL-MANAGEMENT-APPLICATION-USERSERVICE:9098 - registration status: 204
+2025-08-13T21:36:28.537+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [restartedMain] c.w.m.h.u.HotelManagemntApplication      : Started HotelManagemntApplication in 8.043 seconds (process running for 8.701)
+2025-08-13T21:36:28.974+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-13T21:36:28.974+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-13T21:36:28.976+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-13T21:41:28.168+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-13T21:46:28.224+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-13T21:51:28.227+05:30  INFO 20184 --- [HOTEL-MANAGEMENT-APPLICATION-USERSERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
